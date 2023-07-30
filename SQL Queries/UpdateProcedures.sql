@@ -1,0 +1,35 @@
+--create procedure UpdatePostById
+--@id int,
+--@title varchar(500),
+--@content varchar(3000)
+--as 
+--begin
+--update Posts
+--set title=@title,
+--content=@content
+
+--where postid=@id
+--end
+
+--create procedure UpdateCommentById
+--@id int,
+--@comment varchar(1000)
+--as 
+--begin
+--update Comments
+--set Comment=@comment
+--where commentid=@id
+--end
+
+--create procedure updateuserbyemail
+--@email varchar(40),
+--@username varchar(30),
+--@password varchar(20)
+--as 
+--begin 
+--update Users
+--set
+--Username=@username,
+--Password=@password
+--where Useremail=@email
+--end
