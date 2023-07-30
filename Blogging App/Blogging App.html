@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <h2>Blogging Point</h2>
+        <button onclick="signup()">Sign Up</button>
+        <input type="button" value="Delete Account">
+    </nav>
+
+    <div class="login-form">
+        <form>
+            <h2>Log in to your Account</h2>
+            <input type="email" name="email" id="useremail" placeholder="Enter Email" required>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            <input type="button" value="Log In" class="login-btn">
+        </form>
+    </div>
+
+    <div class="signup-form">
+        <form>
+            <h2>Create New Account</h2>
+            <input type="email" name="email" id="useremail" placeholder="Enter Email" required>
+            <input type="text" name="username" placeholder="User Name" required>
+            <input type="text" name="password" id="password" placeholder="Enter Password" required>
+            <input type="button" value="Sign Up" class="signup-btn">
+        </form>
+    </div>
+
+    <div class="after-login">
+        <form id="blogForm">
+            <h1>Add New Post</h1>
+            <input type="text" name="title" placeholder="Title" required><br>
+            <select class="category-select" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+            </select><br>
+            <textarea name="content" placeholder="Content" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <form id="newcatForm">
+            <input type="text" placeholder="Add New Category" required><button type="submit" id="cat-btn">Add</button>
+        </form>
+        <form class="edit-form" id="editForm">
+            <h1>Edit Your Post Here</h1>
+            <input type='number' name="postId" placeholder="enter Unique Blog Id" style="display:none">
+            <input type="text" name="title" placeholder="Title">
+            <textarea name="content" placeholder="Content"></textarea>
+            <button type="submit">Submit</button></form>
+        <div class="blogs"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

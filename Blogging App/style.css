@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(218, 218, 218);
+}
+
+/* navbar stylings */
+nav {
+  color: #fff;
+  background-color: black;
+  padding: 10px 50px;
+  box-shadow: 0px 0px 15px 10px rgba(179, 179, 179, 0.747);
+  border-bottom: 1px solid rgb(196, 196, 196);
+  Height: 50px;
+  position: sticky;
+  display: flex;
+  z-index: 3;
+  top: 0;
+}
+
+nav button{
+  height: fit-content;
+  padding: 5px;
+  color: black;
+  background-color: white;
+  border: black solid 2 px;
+  border-radius: 30%;
+  cursor: pointer;
+  margin-left: 70%;
+
+}
+
+nav input{
+  height: fit-content;
+  padding: 5px;
+  color: white;
+  background-color: red;
+  border: black solid 2 px;
+  border-radius: 30%;
+  cursor: pointer;
+  display:none;
+}
+
+.login-form {
+  display: block;
+}
+
+.login-form input[type='button'],
+.signup-form input[type='button'] {
+  cursor: pointer;
+}
+
+.signup-form {
+  display: none;
+}
+
+.after-login {
+  display: none;
+}
+
+/* Blog posts stylings */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+
+.post {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  box-shadow: #007bff 5px;
+  box-shadow: 0px 0px 15px 10px rgba(179, 179, 179, 0.747);
+}
+
+
+.post h1{
+  color:#0056b3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.post h3{
+  color:chocolate;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post h2{
+  color:#666;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+.post #content{
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10%;
+}
+
+
+
+
+.post:hover {
+  transform: translateY(-2px);
+}
+
+
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+form input,
+form textarea,
+form.edit-form input,
+form.edit-form textarea form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button,
+form.edit-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error {
+  color: rgb(63, 63, 63);
+  font-size: 1.2rem;
+}
+
+.post .delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.post .delete-button:hover {
+  background-color: #c82333;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form.edit-form {
+  display: none;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+/* Show the edit form on clicking the Edit button */
+.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
